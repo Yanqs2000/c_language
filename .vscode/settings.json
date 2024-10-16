@@ -70,5 +70,6 @@
     "numbers": "cpp"
   },
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "aiXcoder.showTrayIcon": true
+  "aiXcoder.showTrayIcon": true,
+  "Codegeex.RepoIndex": true
 }
