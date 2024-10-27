@@ -2,7 +2,9 @@
     "configurations": [
       {
         "name": "Win64",
-        "includePath": ["${workspaceFolder}/**"],
+        "includePath": ["${workspaceFolder}/**",
+                      
+      ],
         "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
         "windowsSdkVersion": "10.0.18362.0",
         "compilerPath": "C:/mingw64/bin/g++.exe",
