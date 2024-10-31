@@ -24,6 +24,7 @@ class NumberOperations:
   
 # 使用示例  
 operations = NumberOperations(5)  
+print("你好")
 print(operations.add_one())       # 输出: 6  
 print(operations.subtract_one())  # 输出: 5  
 print(operations.multiply_by_two())  # 输出: 10  
