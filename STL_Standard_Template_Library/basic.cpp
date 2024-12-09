@@ -142,4 +142,6 @@ void test04()
 int main() 
 {
     test04();
+    
+    return 0;
 }
