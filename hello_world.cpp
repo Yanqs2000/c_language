@@ -20,6 +20,7 @@ int main()
 	{
         printf("Unknown Endian\n");
     }
-
+    printf("x = %x\n", x);
     return 0;
+
 }
