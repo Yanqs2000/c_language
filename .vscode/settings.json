@@ -67,7 +67,10 @@
     "numeric": "cpp",
     "optional": "cpp",
     "string_view": "cpp",
-    "numbers": "cpp"
+    "numbers": "cpp",
+    "chrono": "cpp",
+    "list": "cpp",
+    "format": "cpp"
   },
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "aiXcoder.showTrayIcon": true,
