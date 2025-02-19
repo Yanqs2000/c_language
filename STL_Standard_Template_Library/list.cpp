@@ -6,7 +6,7 @@
 // STL中的链表是一个双向链表，每一个节点包含了前一个节点和后一个节点的指针，最后一个节点的后指针指向第一个节点，形成一个环。
 // push_front(),pop_front(),push_back(),pop_back(),
 // 迭代器：begin(),end(),insert()
-// 重要性质：插入、删除、都不会引起原有迭代器（指针）的失效，在vector中不成立
+// 重要性质：插入、删除、都不会引起原有迭代器（指针）的失效，这在vector中不成立
 
 #include <iostream>
 #include <list>
