@@ -146,6 +146,6 @@ void test05()
 
 int main()
 {
-    test05();
+    test04();
     return 0;
 }
