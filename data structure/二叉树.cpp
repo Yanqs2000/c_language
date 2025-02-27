@@ -70,7 +70,6 @@ void levelTraverse01(TreeNode* root)
             q.push(cur->right);
         }
     }
-    
 }
 
 void levelTraverse02(TreeNode* root)
@@ -124,7 +123,7 @@ void levelTraverse03(TreeNode* root)
     {
         State cur = q.front();
         q.pop();
-        // 访问 cur 节点, 同时知道它所在的层数
+        // 访问 cur 节点, 同时知道它所在的层数(深度)
         cout << "Depth: " << cur.depth << " value: " << cur.node->val << endl;
 
         // 将 cur 的子节点加入队列
