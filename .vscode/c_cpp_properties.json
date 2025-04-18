@@ -2,7 +2,7 @@
     "configurations": [
       {
         "name": "Win64",
-        "includePath": ["${workspaceFolder}/**",
+        "includePath": ["${workspaceFolder}/**"
                       
       ],
         "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
@@ -11,7 +11,28 @@
         "cStandard": "c17",
         "cppStandard": "c++17",
         "intelliSenseMode": "gcc-x64"
-      }
+      },
+      {
+        "name": "Mac",
+        "includePath": [
+          "${workspaceFolder}/**",
+          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+          
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang", // 或者 "/usr/bin/gcc"，根据您的编译器选择
+            "cStandard": "c11", // MacOS通常支持C11标准
+            "cppStandard": "c++17", // MacOS通常支持C++17标准
+            "intelliSenseMode": "clang-arm64" // 使用clang作为IntelliSense模式
+        }
     ],
     "version": 4
   }
