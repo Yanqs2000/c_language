@@ -1,10 +1,12 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
-int main() {
+int main()
+{
     // 读取图像
-    cv::Mat img = cv::imread("/Users/yanqs/Documents/GitHub/c_language/opencv_c++/皮卡丘.png");  // 请确保这张图在程序同目录
-    if (img.empty()) {
+    cv::Mat img = cv::imread("./opencv_c++/皮卡丘.png"); // 请确保这张图在程序同目录
+    if (img.empty())
+    {
         std::cerr << "无法读取图片，请确保图片存在\n";
         return 1;
     }
@@ -19,9 +21,9 @@ int main() {
     cv::waitKey(0); // 等待键盘输入
 
     // 保存灰度图
-    cv::imwrite("/Users/yanqs/Documents/GitHub/c_language/opencv_c++/皮卡丘_gray.png", gray);
+    cv::imwrite("./皮卡丘_gray.png", gray);
 
     return 0;
 }
 
-//g++ main.cpp -o main `pkg-config --cflags --libs opencv4`
+// mac: g++ main.cpp -o main `pkg-config --cflags --libs opencv4`

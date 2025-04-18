@@ -1,23 +1,28 @@
 {
     "configurations": [
-      {
-        "name": "Win64",
-        "includePath": ["${workspaceFolder}/**"
-                      
-      ],
-        "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
-        "windowsSdkVersion": "10.0.18362.0",
-        "compilerPath": "C:/mingw64/bin/g++.exe",
-        "cStandard": "c17",
-        "cppStandard": "c++17",
-        "intelliSenseMode": "gcc-x64"
-      },
-      {
-        "name": "Mac",
-        "includePath": [
-          "${workspaceFolder}/**",
-          "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
-          "/opt/homebrew/include/opencv4"
+        {
+            "name": "Win64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/Program Files/opencv4.6/opencv/build/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "C:/mingw64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
+                "/opt/homebrew/include/opencv4"
             ],
             "defines": [
                 "_DEBUG",
@@ -29,10 +34,10 @@
                 "/Library/Frameworks"
             ],
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11", 
-            "cppStandard": "c++17", 
-            "intelliSenseMode": "clang-arm64" 
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-arm64"
         }
     ],
     "version": 4
-  }
+}
