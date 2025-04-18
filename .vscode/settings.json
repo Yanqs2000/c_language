@@ -74,5 +74,6 @@
   },
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "aiXcoder.showTrayIcon": true,
-  "Codegeex.RepoIndex": true
+  "Codegeex.RepoIndex": true,
+  "cmake.sourceDirectory": "/Users/yanqs/Documents/GitHub/c_language/opencv_c++"
 }
