@@ -10,6 +10,6 @@ int main()
     
     // 打印字符串的长度（不包括终止符 '\0'）
     printf("Length of string: %zu\n", strlen(str));
-    
+
     return 0;
 }
