@@ -1,28 +1,56 @@
 #include <opencv2/opencv.hpp>
-#include <iostream>
+
+using namespace cv;
+using namespace std;
 
 int main()
 {
     // 读取图像
-    cv::Mat img = cv::imread("./opencv_c++/皮卡丘.png"); // 请确保这张图在程序同目录
-    if (img.empty())
+    Mat image = imread("/Users/yanqs/Documents/GitHub/c_language/opencv_c++/皮卡丘.png");
+    if (image.empty())
     {
-        std::cerr << "无法读取图片，请确保图片存在\n";
-        return 1;
+        cerr << "无法加载图像！" << endl;
+        return -1;
     }
 
-    // 转换为灰度图像
-    cv::Mat gray;
-    cv::cvtColor(img, gray, cv::COLOR_BGR2GRAY);
+    // 二值化
+    Mat gray, binary;
+    cvtColor(image, gray, COLOR_BGR2GRAY);
+    threshold(gray, binary, 128, 255, THRESH_BINARY);
 
-    // 显示图像
-    cv::imshow("原图", img);
-    cv::imshow("灰度图", gray);
-    cv::waitKey(0); // 等待键盘输入
+    // 连通域标记（使用OpenCV函数）
+    Mat labels, stats, centroids;
+    int numObjects = connectedComponentsWithStats(binary, labels, stats, centroids);
 
-    // 保存灰度图
-    cv::imwrite("./皮卡丘_gray.png", gray);
+    // 可视化结果
+    Mat colorLabels(labels.size(), CV_8UC3);
+    vector<Vec3b> colors(numObjects);
+    colors[0] = Vec3b(0, 0, 0); // 背景
 
+    for (int i = 1; i < numObjects; i++)
+    {
+        colors[i] = Vec3b(rand() % 256, rand() % 256, rand() % 256);
+    }
+
+    for (int y = 0; y < labels.rows; y++)
+    {
+        for (int x = 0; x < labels.cols; x++)
+        {
+            int label = labels.at<int>(y, x);
+            colorLabels.at<Vec3b>(y, x) = colors[label];
+        }
+    }
+
+    // 显示结果
+    imshow("原始图像", image);
+    imshow("二值图像", binary);
+    imshow("连通域标记", colorLabels);
+
+    // 保存结果
+    imwrite("binary_opencv.jpg", binary);
+    imwrite("labels_opencv.jpg", colorLabels);
+
+    waitKey(0);
     return 0;
 }
 

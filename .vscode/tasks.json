@@ -53,13 +53,8 @@
         {
             "label": "clang++",
             "type": "shell",
-            "command": "clang++",
+            "command": "clang++ -std=c++17 -g ${file} -o ${fileDirname}/${fileBasenameNoExtension} `pkg-config --cflags --libs opencv4`",
             "args": [
-                "-std=c++17",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": {
                 "kind": "build",

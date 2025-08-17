@@ -1,9 +1,0 @@
-7
-1 StevenSpielberg TomHanks Adventure
-2 JamesCameron LeonardoDiCaprio Romance
-3 ChristopherNolan ChristianBale Thriller
-4 StevenSpielberg Harrisonford Adventure
-5 RobertZemeckis TomHanks Drama
-6 MartinScorsese LeonardoDiCaprio crime
-7 JamesMangold LeonardoDiCaprio Biography
-A LeonardoDiCaprio
