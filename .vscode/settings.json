@@ -90,5 +90,8 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "aiXcoder.showTrayIcon": true,
   "Codegeex.RepoIndex": true,
-  "cmake.sourceDirectory": "/Users/yanqs/Documents/GitHub/c_language/opencv_c++"
+  "cmake.sourceDirectory": "/Users/yanqs/Documents/GitHub/c_language/program",
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "cmake.ignoreCMakeListsMissing": true
 }

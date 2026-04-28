@@ -1,0 +1,110 @@
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# C / C++ build outputs
+# =========================
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Common local executable names
+main
+hello
+a.out
+
+# =========================
+# Build directories
+# =========================
+build/
+cmake-build-*/
+Debug/
+Release/
+debug/
+release/
+out/
+bin/
+obj/
+
+# =========================
+# CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Keep if you intentionally want to commit it for clangd.
+# Remove this ignore rule if needed.
+.clangd/
+
+# =========================
+# Xcode / macOS C++ development
+# =========================
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserstate
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+.cache/
+
+# =========================
+# Test / coverage outputs
+# =========================
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# =========================
+# Python auxiliary files
+# If this repo later uses scripts/tools
+# =========================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
